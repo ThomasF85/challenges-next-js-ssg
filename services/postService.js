@@ -26,10 +26,10 @@ const posts = [
   },
 ];
 
-export function getAllPosts() {
+export async function getAllPosts() {
   return posts;
 }
 
-export function getPostById(id) {
+export async function getPostById(id) {
   return posts.find((post) => post.id === id);
 }
